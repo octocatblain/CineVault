@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import SearchIcon from "./search.svg";
-import MovieCard from "./MovieCard";
+import MovieCard from "./Components/MovieCard";
 
 //API Key = 27d0821
 
@@ -42,7 +42,7 @@ const App = () => {
       </div>
 
       <div className="container">
-        <MovieCard />
+        <MovieCard movie={movie1} />
       </div>
     </div>
   );
