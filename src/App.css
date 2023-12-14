@@ -16,7 +16,7 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: hsl(204, 7%, 14%);
+  background-color: #212426;
 }
 
 .app {
@@ -31,11 +31,7 @@ body {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
-  background: linear-gradient(
-    90deg,
-    hsl(27, 85%, 84%) 0%,
-    hsla(27, 85%, 84%, 0) 100%
-  );
+  background: linear-gradient(90deg, #00ffc6 0%, #00ffc600 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -52,10 +48,9 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
-  background: hsl(210, 6%, 13%);
-  -webkit-box-shadow: 5px 5px 7px hsl(220, 5%, 12%),
-    -5px -5px 7px hsl(204, 7%, 14%);
-  box-shadow: 5px 5px 7px hsl(220, 5%, 12%), -5px -5px 7px hsl(204, 7%, 14%);
+  background: #1f2123;
+  -webkit-box-shadow: 5px 5px 7px #1d1e20, -5px -5px 7px #212426;
+  box-shadow: 5px 5px 7px #1d1e20, -5px -5px 7px #212426;
 }
 
 .search input {
@@ -67,8 +62,8 @@ h1 {
   padding-right: 1rem;
 
   outline: none;
-  color: hsl(0, 0%, 63%);
-  background: hsl(210, 6%, 13%);
+  color: #00ffca;
+  background: #1f2123;
 }
 
 .search img {
@@ -104,7 +99,7 @@ h1 {
 
 .empty h2 {
   font-size: 1.25rem;
-  color: hsl(27, 85%, 84%);
+  color: #00ffc6;
   font-family: var(--font-raleway);
 }
 
@@ -131,7 +126,7 @@ h1 {
   border: none;
 
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  box-shadow: 0px 13px 10px -7px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0px 13px 10px -7px #0000001a;
 }
 
 .movie div:nth-of-type(1) {
@@ -140,11 +135,11 @@ h1 {
   width: 100%;
   opacity: 0;
   top: 0;
-  color: hsl(27, 85%, 84%);
+  color: #247881;
 }
 
 .movie:hover {
-  box-shadow: 0px 30px 18px -8px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0px 30px 18px -8px #0000001a;
   transform: scale(1.05, 1.05);
 }
 
@@ -160,7 +155,7 @@ h1 {
 
 .movie div:nth-of-type(3) {
   z-index: 2;
-  background-color: hsl(204, 5%, 21%);
+  background-color: #2c3333;
   padding: 16px 24px 24px 24px;
 
   position: absolute;
@@ -175,13 +170,13 @@ h1 {
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
-  color: hsl(0, 0%, 94%);
+  color: #cbe4de;
 }
 
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Inter", serif;
-  color: hsl(27, 85%, 84%);
+  color: #00ffca;
 }
 
 .movie:hover div:nth-of-type(2) {

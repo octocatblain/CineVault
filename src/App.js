@@ -44,7 +44,7 @@ const App = () => {
           ))}
         </div>
       ) : (
-        <div className="container">
+        <div className="empty">
           <h2>
             Type in the Search box and hit{" "}
             <img width={20} height={20} src={SearchIcon} alt="search" />
