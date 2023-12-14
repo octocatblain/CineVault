@@ -1,4 +1,4 @@
-# CineVault
+# 📺CineVault
 
 This is **React Website** that utilizes the **OMDb API** library to display information about Movies searched.
 
