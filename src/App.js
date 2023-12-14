@@ -3,13 +3,10 @@ import "./App.css";
 import SearchIcon from "./search.svg";
 import MovieCard from "./Components/MovieCard";
 
-//API Key = 27d0821
-
 const API_URL = "https://www.omdbapi.com/?apikey=27d0821&";
-// const IMG_URL = "http://img.omdbapi.com/?apikey=27d0821&";
 
 const App = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState(["*"]);
   const [searchValue, setSearchValue] = useState("");
 
   const fetchMovies = async (title) => {
@@ -20,7 +17,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchMovies("batman");
+    fetchMovies("*");
   }, []);
 
   return (
@@ -40,15 +37,18 @@ const App = () => {
         />
       </div>
 
-      {movies.length > 0 ? (
+      {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.imdbID} />
           ))}
         </div>
       ) : (
-        <div className="empty">
-          <h1>Movie Database is Null!</h1>
+        <div className="container">
+          <h2>
+            Type in the Search box and hit{" "}
+            <img width={20} height={20} src={SearchIcon} alt="search" />
+          </h2>
         </div>
       )}
     </div>
