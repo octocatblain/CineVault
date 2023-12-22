@@ -1,0 +1,10 @@
+.banner {
+  bottom: 0px;
+  position: fixed;
+  background-color: darkcyan;
+  color: white;
+}
+
+.banner.text {
+  text-align: center;
+}
